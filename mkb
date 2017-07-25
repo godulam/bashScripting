@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo Filename:
+
+read MKB
+
+touch ./${MKB}.sh
+chmod u+x ${MKB}.sh
+
+vim ${MKB}.sh
