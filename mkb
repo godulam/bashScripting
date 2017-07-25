@@ -1,10 +1,13 @@
 #!/bin/bash
 
-echo Filename:
-
-read MKB
-
-touch ./${MKB}.sh
-chmod u+x ${MKB}.sh
-
-vim ${MKB}.sh
+if [ -z "$1" ]; then
+    echo Filename:
+    read MKB
+    touch ./${MKB}.sh
+    chmod u+x ${MKB}.sh
+    vim ${MKB}.sh
+else    
+    touch ./${1}.sh
+    chmod u+x ${1}.sh
+    vim ${1}.sh
+fi
