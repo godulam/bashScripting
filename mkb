@@ -3,10 +3,12 @@
 if [ -z "$1" ]; then
     echo Filename:
     read MKB
+    cd  /home/mgg/bashScripting
     touch ./${MKB}.sh
     chmod u+x ${MKB}.sh
     vim ${MKB}.sh
 else    
+    cd /home/mgg/bashScripting
     touch ./${1}.sh
     chmod u+x ${1}.sh
     vim ${1}.sh
