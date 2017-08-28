@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if [ -z "$1" ]; then
+    echo Filename:
+    read MKP
+    cd  /home/maciek/workspace/perlStudy
+    touch ./${MKP}.pl
+    chmod u+x ${MKP}.pl
+    vim ${MKP}.pl
+else    
+    cd /home/maciek/workspace/perlStudy
+    touch ./${1}.pl
+    chmod u+x ${1}.pl
+    vim ${1}.pl
+fi
